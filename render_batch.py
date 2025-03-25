@@ -34,9 +34,6 @@ def render_scene_from_blend(args, blend_path, scene_index):
     collection = bpy.data.collections.new("RenderCollection")
     bpy.context.scene.collection.children.link(collection)
 
-    # Reconstruct the objects from structure
-    generate_structure(args, structure, collection)
-
     # Extract scene name from filename
     scene_name = f"scene_{scene_index}"
     output_img_name = scene_name + ".png"
