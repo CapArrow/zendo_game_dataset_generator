@@ -11,6 +11,7 @@ from zendo_objects import *
 from generate import generate_structure
 import utils
 from utils import debug
+from pipeline import generate_full_scene
 
 
 def render(args, output_path, name):
@@ -362,4 +363,11 @@ if __name__ == '__main__':
 
     utils.DEBUG_PRINTING = args.debug_printing
 
-    main(args)
+    # main(args)
+
+    result = generate_full_scene(args, 0)
+
+    if result:
+        print("✅ Scene generated successfully!")
+    else:
+        print("❌ Scene generation failed.")

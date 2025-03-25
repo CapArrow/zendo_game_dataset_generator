@@ -12,7 +12,7 @@ render_tile_size: 256 # The tile size to use for rendering.
 stacking_offset: 0.1 # Offset for stacking objects ontop of each other
 
 # Config for Rule Generation
-num_rules: 8 # How many random rules should be generated
+num_rules: 4 # How many random rules should be generated
 num_examples: 1 # How many random scenes should be generated per rule
 generate_invalid_examples: False # Generate for every rule an invalid example which doesn't fulfill the given rule
 num_invalid_examples: 1 # How many invalid scenes should be generated per rule
